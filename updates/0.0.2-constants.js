@@ -18,7 +18,8 @@ exports.create = {
     {"name": "Technical support", "value": "Technical support"},
     {"name": "Contact us", "value": "Contact us"},
     {"name": "Get in touch with our team", "value": "Get in touch with our team"},
-    {"name": "Your name", "value": "Get in touch with our team"},
+    {"name": "Your name", "value": "Your name"},
+    {"name": "Phone", "value": "Phone"},
     {"name": "Message", "value": "Message"},
     {"name": "Send message", "value": "Send message"},
     {"name": "Latest news", "value": "Latest news"},
@@ -60,6 +61,7 @@ exports.create = {
       "name": "We are making revolution for the recruitment industry text",
       "value": "ChronoBank’s vision is to create a peer-to-marketplace for short-term recruitment in which there are no unnecessary costs and no arbitrary gatekeepers. We believe that blockchain technology is the key to unlocking this new world of employment opportunities that anyone can access, wherever they are in the world, and make sure they get paid promptly and fairly. We want to pioneer best practice in both the blockchain and labour-hire industries, and work with a range of highly-qualified partners to ensure our solution is secure, robust and user-friendly for all."
     },
-    {"name": "Read bio", "value": "Read bio" }
+    {"name": "Read bio", "value": "Read bio" },
+    {"name": "and Yes, it’s easy to deploy!", "value": "and Yes, it’s easy to deploy!" },
   ]
 }
