@@ -30,6 +30,7 @@ Header.add({
   image2x320: { type: Types.CloudinaryImage },
   image2x480: { type: Types.CloudinaryImage },
   image2x640: { type: Types.CloudinaryImage },
+  projectIcon: { type: Types.CloudinaryImage },
   video: { type: Types.Url },
   brief: { type: Types.Html, wysiwyg: true, height: 300 },
 },

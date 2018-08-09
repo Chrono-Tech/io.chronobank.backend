@@ -34,13 +34,16 @@ Product.add({
     { value: 'tile', label: 'Tile' }
   ]},
   features: { type: Types.Relationship, ref: 'ProductFeature', many: true },
-  descriptions: { type: Types.Relationship, ref: 'ProductDescription', many: true }
+  descriptions: { type: Types.Relationship, ref: 'ProductDescription', many: true },
+  navigationButtonText: { type: String },
+  navigationButtonLink: { type: String },
 },
   'Internationalization',
   withTranslation.withAllTranslations({
     title: { type: String, label: 'Title' },
     mission: { type: Types.Html, wysiwyg: true, label: 'Mission', height: 150 },
     brief: { type: Types.Html, wysiwyg: true, label: 'Brief', height: 150 },
+    navigationButtonText: { type: String, label: 'Navigation Button Text' },
   })
 )
 

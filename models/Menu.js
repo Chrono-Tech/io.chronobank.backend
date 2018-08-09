@@ -12,6 +12,8 @@ const Menu = new keystone.List('Menu', {
 Menu.add({
   title: { type: String, required: true },
   subtitle: { type: String },
+  projectLink: { type: String },
+  projectLinkText: { type: String },
   url: { type: String },
   symbol: { type: Types.CloudinaryImage },
   icon32x32: { type: Types.CloudinaryImage },
@@ -30,6 +32,7 @@ Menu.add({
   withTranslation.withAllTranslations({
     title: { type: String, label: 'Title' },
     subtitle: { type: String, label: 'Subtitle' },
+    projectLinkText: { type: String, label: 'Project Link Text' },
   })
 )
 
