@@ -32,3 +32,10 @@ node_modules
 
 config/development.json
 config/production.json
+node_modules
+.idea/
+.next/
+ChronoWeb.iml
+build
+static/files/*
+!static/files/NODELETE
