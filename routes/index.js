@@ -90,6 +90,7 @@ exports = module.exports = function (app) {
       .populate('downloads')
       .populate('distros')
       .populate('features')
+      .populate('links')
       .populate('descriptions')
       .exec()
     res.send(product)
@@ -102,6 +103,7 @@ exports = module.exports = function (app) {
       .populate('distros')
       .populate('features')
       .populate('descriptions')
+      .populate('links')
       .exec()
     res.send({
       products
@@ -415,7 +417,7 @@ exports = module.exports = function (app) {
     },
     Product: {
       methods: ['retrieve'],
-      populate: ['downloads', 'distros', 'features'],
+      populate: ['downloads', 'distros', 'features', 'links'],
     },
     Social: {
       methods: ['list', 'retrieve']

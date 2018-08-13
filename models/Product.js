@@ -36,6 +36,7 @@ Product.add({
   ]},
   features: { type: Types.Relationship, ref: 'ProductFeature', many: true },
   descriptions: { type: Types.Relationship, ref: 'ProductDescription', many: true },
+  links: { type: Types.Relationship, ref: 'ProductLink', many: true },
 },
   'Internationalization',
   withTranslation.withAllTranslations({
