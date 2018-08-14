@@ -23,6 +23,7 @@ Product.add({
   ]},
   icon: { type: Types.CloudinaryImage },
   icon2x: { type: Types.CloudinaryImage },
+  iconText: {  type: Types.Html, wysiwyg: true, height: 100 },
   image: { type: Types.CloudinaryImage },
   image2x: { type: Types.CloudinaryImage },
   mission: { type: Types.Html, wysiwyg: true, height: 100 },
@@ -34,13 +35,15 @@ Product.add({
     { value: 'tile', label: 'Tile' }
   ]},
   features: { type: Types.Relationship, ref: 'ProductFeature', many: true },
-  descriptions: { type: Types.Relationship, ref: 'ProductDescription', many: true }
+  descriptions: { type: Types.Relationship, ref: 'ProductDescription', many: true },
+  links: { type: Types.Relationship, ref: 'ProductLink', many: true },
 },
   'Internationalization',
   withTranslation.withAllTranslations({
     title: { type: String, label: 'Title' },
     mission: { type: Types.Html, wysiwyg: true, label: 'Mission', height: 150 },
     brief: { type: Types.Html, wysiwyg: true, label: 'Brief', height: 150 },
+    iconText: { type: String, label: 'Icon Text' },
   })
 )
 
